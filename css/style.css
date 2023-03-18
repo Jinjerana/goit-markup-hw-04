@@ -1,0 +1,394 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #434455;
+}
+
+/*---*/
+
+:root {
+  --title-color: #2e2f42;
+  --text-light-color: #ffffff;
+  --logofootertext-color: #e7e9fc;
+  --buttonlink-color: #4d5ae5;
+  --buttonfilterhover-color: #404bbf;
+  --buttonfilterbg-color: #f4f4fd;
+  --linkcolor: #434455;
+  --herobuttoncolor: rgba(0, 0, 0, 0.15);
+  --teamcolor: #d9d9d9;
+}
+
+* *::before *::after {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 120px 0;
+}
+
+.image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/*HEADER*/
+
+.header {
+  padding: 24px;
+  border-bottom: 1px solid var(--logofootertext-color);
+}
+
+.headerflex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headernav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listmenu {
+  display: flex;
+  gap: 40px;
+}
+
+.listitem {
+  display: flex;
+  width: calc((100% - 80px) / 3);
+}
+
+.logo {
+  margin-right: 76px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--buttonlink-color);
+}
+
+.studio {
+  color: var(--title-color);
+}
+
+.menu {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.menu:hover {
+  color: var(--buttonfilterhover-color);
+}
+
+.menu:focus {
+  color: var(--buttonfilterhover-color);
+}
+
+.contacts {
+  font-style: normal;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contactsflex {
+  display: flex;
+  gap: 40px;
+}
+
+.additem {
+  display: flex;
+}
+
+.address {
+  letter-spacing: 0.02em;
+  color: var(--linkcolor);
+}
+
+.address:hover {
+  color: var(--buttonfilterhover-color);
+}
+
+.address:focus {
+  color: var(--buttonfilterhover-color);
+}
+
+/*HERO*/
+
+.hero {
+  padding: 188px 0;
+  text-align: center;
+  background-color: var(--title-color);
+}
+
+.heroslogan {
+  width: 496px;
+  margin: 0 auto;
+  margin-bottom: 48px;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--text-light-color);
+}
+
+.herobutton {
+  display: block;
+  align-items: center;
+  margin: 0 auto;
+  padding: 16px 32px;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--text-light-color);
+  background-color: var(--buttonlink-color);
+  box-shadow: 0px 4px 4px var(--herobuttoncolor);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.herobutton:hover {
+  color: var(--text-light-color);
+  background-color: var(--buttonfilterhover-color);
+}
+
+.herobutton:focus {
+  color: var(--text-light-color);
+  background-color: var(--buttonfilterhover-color);
+}
+
+/*ABOUT*/
+
+.aboutlist {
+  display: flex;
+  gap: 24px;
+}
+
+.aboutli {
+  display: block;
+  width: calc((100% - 72px) / 4);
+}
+
+.abouttitle {
+  margin: 0 0 8px 0;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.abouttext {
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+/*WHAT ARE WE DOING*/
+
+.doing {
+  padding-top: 0;
+}
+
+.doingflex {
+  display: flex;
+  gap: 24px;
+}
+
+.doingli {
+}
+
+/*OUR TEAM*/
+
+.team {
+  background-color: var(--buttonfilterbg-color);
+}
+
+.title {
+  margin: 0 0 72px 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--title-color);
+}
+
+.teamflex {
+  display: flex;
+  gap: 24px;
+}
+
+.teamli {
+  width: calc((100% - 72px) / 4);
+  background-color: var(--text-light-color);
+}
+
+.teamdiv {
+  padding: 32px 0;
+}
+
+.teammember {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.teammemberprof {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+/*FOOTER*/
+
+.footer {
+  padding: 100px 0;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--title-color);
+}
+
+.footerleft {
+  width: 264px;
+}
+
+.logofooter {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--buttonlink-color);
+}
+
+.studiofooter {
+  color: var(--buttonfilterbg-color);
+}
+
+.logofootertext {
+  margin: 0;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--logofootertext-color);
+}
+
+/*PORTFOLIO*/
+
+.section.portfolio {
+  padding-top: 96px;
+}
+
+.portfoliolist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 0 72px 0;
+  gap: 24px;
+}
+
+.portfolioli {
+}
+
+.portfoliofilter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.portfoliofilterli {
+  width: calc((100% - 48px) / 3);
+}
+
+.buttonfilter {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.04em;
+  display: flex;
+  text-align: center;
+  color: var(--buttonlink-color);
+  background-color: var(--buttonfilterbg-color);
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--logofootertext-color);
+}
+
+.buttonfilter:hover {
+  color: var(--text-light-color);
+  background-color: var(--buttonfilterhover-color);
+}
+
+.buttonfilter:focus {
+  color: var(--text-light-color);
+  background-color: var(--buttonfilterhover-color);
+}
+
+.card {
+  padding: 32px 0 32px 16px;
+  border: 1px solid var(--logofootertext-color);
+  border-top: 0;
+}
+
+.cardtitle {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+
+.cardtext {
+  margin: 0;
+  letter-spacing: 0.02em;
+  color: var(--linkcolor);
+}
